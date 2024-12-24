@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão de Visita Rebecca</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        
+        body {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(30, 30, 30);
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        
+        .cartao {
+            position: relative;
+            display: flex;
+            width: 1100px;
+            height: 650px;
+            border: 2px solid black; 
+            
+            border-radius: 20px;
+            overflow: hidden; 
+        }
+
+        
+        .esquerda {
+            flex: 0.6; 
+            background: linear-gradient(to bottom, #130020, #26003f, #4b0066); 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: white;
+        }
+
+        .esquerda img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%; 
+            object-fit: cover; 
+            margin-bottom: 20px;
+        }
+
+        .esquerda h2 {
+            font-size: 24px;
+            text-align: center;
+            margin: 0;
+        }
+
+        .esquerda p {
+            font-size: 20px;
+            margin: 5px 0 0;
+        }
+
+        .esquerda p {
+            font-size: 18px;
+            margin: 10px 0 0;
+            text-align: center;
+        }
+        .esquerda p {
+            font-size: 18px;
+            margin: 30px 0 0;
+        }
+        .direita {
+            flex: 0.4; 
+            background: linear-gradient(to bottom, rgb(45, 45, 45), rgb(85,85,85), rgb(125,125,125)); 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        
+        .icone img {
+            width: 70px; 
+            height: 70px;
+            object-fit: contain;
+            border-radius: 5px; 
+            padding: 5px; 
+            transition: 0.3s; 
+        }
+
+        .icone img:hover {
+            background-color: rebeccapurple; 
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cartao">
+
+        <div class="triangulo"></div> 
+        <div class="esquerda">
+            <img src="img/Foto-rebecca.jpeg" alt="Foto de Rebecca">
+            <h2>Rebecca Cristine Feitosa Oliveira</h2>
+            <p>Engenheira Mecatrônica</p>
+            <p>Inovação em Automação e Tecnologia: Soluções Inteligentes para o Futuro. </p>
+            <p>Entre em contato: (85)99259-2982</p>
+        </div>
+
+
+        <div class="direita">
+            <div class="icone">
+                
+                <a href="https://www.instagram.com/rebeccaoli._?igsh=bWh4M25hcDl6bm8y" target="_blank">
+                    <img src="img/instagram-6338392_1280.webp" alt="Instagram">
+                </a>
+            </div>
+            <div class="icone">
+                <a href="mailto:rebeccafeitosa.oc@gmail.com" target="_blank">
+                    <img src="img/gmail-icon-free-png.webp" alt="Gmail">
+                </a>
+            </div>
+            <div class="icone">
+                <a href="https://www.linkedin.com/in/rebecca-oliveira-9b7b63232/" target="_blank">
+                    <img src="img/linkedin-icone.webp" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="icone">
+                <a href="https://www.github.com/rebeccaoliver" target="_blank">
+                    <img src="img/GitHub-Symbol.png" alt="GitHub">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
